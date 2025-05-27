@@ -1,4 +1,4 @@
-package Example1;
+package Example2;
 import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
@@ -24,7 +24,9 @@ public class Abiturient {
         result = (math+physics+lang)/3.0;
         return result;
     }
-    String print(){
-
+    void print(){
+        StringBuilder sb = new StringBuilder();
+        double avr = Math.round(average()*10)/10.0;
+        System.out.println(sb.append(surname).append(" ").append(name).append(" ").append("математика = ").append(math).append(" физика = ").append(physics).append(" язык = ").append(lang).append(" средний балл = ").append(avr));
     }
 }
