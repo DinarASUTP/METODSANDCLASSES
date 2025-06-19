@@ -21,11 +21,11 @@ public class BusinessTrip {
         result = transportPay + dayCount * dayPay;
         return result;
     }
-    void show(){
-        System.out.printf("Суточные = %D",dayPay);
-        System.out.printf("Фамилия Имя = "+FI);
-        System.out.printf("Транспортные расходы = %D",transportPay);
-        System.out.printf("Количество дней = %D",3);
-        System.out.printf("Итого расходы= %D",getTotal());
+    public void show(){
+        System.out.printf("Суточные = %d%n",dayPay);
+        System.out.printf("Фамилия Имя = %s%n",FI);
+        System.out.printf("Транспортные расходы = %d%n",transportPay);
+        System.out.printf("Количество дней = %d%n",dayCount);
+        System.out.printf("Итого расходы = %d",getTotal());
     }
 }
