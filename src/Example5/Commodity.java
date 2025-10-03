@@ -19,6 +19,7 @@ public class Commodity {
 class Purchase{
     public String name;
     public int count;
+    Commodity commodity;
     private int getCost(int price, int count)  {
         int result = 0;
         result = price * count;
@@ -26,6 +27,6 @@ class Purchase{
     }
     public void show(){
         System.out.printf("Количество: %d",name);
-        System.out.printf("Стоимость покупки: %d", getCost);
+        System.out.printf("Стоимость покупки: %d", getCost(commodity.price,count));
     }
 }
